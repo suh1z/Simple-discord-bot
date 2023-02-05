@@ -1,6 +1,6 @@
 import discord
 
-client = discord.Client()
+discord.Client(intents=discord.Intents().all()) #plus Make sure intents are toggled https://discord.com/developers/applications
 
 @client.event
 async def on_ready():
